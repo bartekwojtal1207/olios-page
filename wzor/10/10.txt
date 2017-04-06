@@ -1,0 +1,5 @@
+zadanie 10
+
+1. start 29.04
+2. html/css/js
+3. rwd obowiazkowo
