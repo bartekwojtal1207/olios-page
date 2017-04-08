@@ -1,0 +1,36 @@
+html {
+  height: 100%; }
+
+.container-fluid {
+  height: 100%;
+  min-height: 637px;
+  max-height: 645px;
+  min-width: 100%;
+  background-image: url("../img/menu-photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #f1f1f1; }
+
+.btn-col {
+  display: flex;
+  justify-content: center; }
+
+.main-title {
+  font-size: 76px;
+  text-transform: uppercase; }
+
+.main-btn {
+  background-color: blue;
+  color: white;
+  width: 90px;
+  border-radius: 75px;
+  height: 30px; }
+
+.background_title {
+  font-size: 250px;
+  position: absolute;
+  top: 10;
+  left: 263px;
+  opacity: 0.1;
+  top: -117px; }
