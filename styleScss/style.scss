@@ -38,9 +38,26 @@ html {
   justify-content: center;
 }
 .main-title{
-  font-size: 76px;
-  text-transform: uppercase;
+//   // font-size: 76px;
+//   // text-transform: uppercase;
+//   font-size: 220px;
+//   //font-family: "Lato";
+//   color: rgb(0, 0, 0);
+//   line-height: 1.2;
+//   text-align: center;
+//   //position: absolute;
+//   //left: 827.937px;
+//   //top: 129px;
+// //  z-index: 18;
+//   text-transform: uppercase;
+font-size: 150px;
+color: black;
+line-height: 1.2;
+text-align: center;
+text-transform: uppercase;
 }
+
+
 .main-btn{
   background-color: blue;
   color: white;
@@ -49,10 +66,46 @@ html {
   height: 30px;
 }
 .background_title{
-    font-size: 250px;
-    position: absolute;
-    top: 10;
-    left: 263px;
-    opacity: 0.1;
-    top: -117px;
+    // font-size: 250px;
+    // position: absolute;
+    // top: 10;
+    // left: 263px;
+    // opacity: 0.1;
+    // top: -117px;
+    // .NEWEST {
+  // font-size: 172.765px;
+  // // font-family: "Lato";
+  // color: rgba(231, 231, 231, 0.702);
+  // line-height: 1.2;
+  // text-align: left;
+  // -moz-transform: matrix( 2.31682812139561,0,0,2.31528107603924,0,0);
+  // -webkit-transform: matrix( 2.31682812139561,0,0,2.31528107603924,0,0);
+  // -ms-transform: matrix( 2.31682812139561,0,0,2.31528107603924,0,0);
+//   position: absolute;
+//   left: 831.629px;
+//   top: 250.841px;
+//   z-index: 18;
+font-size: 150px;
+color: rgba(231, 231, 231, 0.702);
+line-height: 1.2;
+text-align: left;
+-moz-transform: matrix(2.31683, 0, 0, 2.31528, 0, 0);
+-webkit-transform: matrix(2.31683, 0, 0, 2.31528, 0, 0);
+-ms-transform: matrix(2.31683, 0, 0, 2.31528, 0, 0);
+position: absolute;
+left: 406px;
+top: 48px;
+}
+.logoImg{
+  z-index: 5;
+  cursor: pointer;
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  margin-top: 15px;
+  margin-left: 15px
+}
+.menuImg{
+  width: 15px;
+  height: 15px;
 }
