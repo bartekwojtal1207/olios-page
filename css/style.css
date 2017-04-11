@@ -1,7 +1,7 @@
 html {
   height: 100%; }
 
-.container-fluid {
+.main_section .container-fluid {
   height: 100%;
   min-height: 637px;
   max-height: 645px;
@@ -27,7 +27,7 @@ html {
 
 .thrid-title {
   font-size: 28px;
-  margin-left: 25px; }
+  margin-left: 35px; }
 
 .main-btn {
   background-color: blue;
@@ -72,3 +72,17 @@ html {
 
 .menu_link {
   display: inline-block; }
+
+.category-section {
+  background-color: #f1f1f1; }
+  .category-section .container-fluid {
+    height: 100%;
+    min-height: 645px;
+    max-height: 645px;
+    background-color: #f1f1f1; }
+  .category-section h3 {
+    font-size: 50px; }
+  .category-section .product {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px; }
