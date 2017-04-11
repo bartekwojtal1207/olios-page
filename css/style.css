@@ -17,11 +17,17 @@ html {
   justify-content: center; }
 
 .main-title {
-  font-size: 150px;
+  font-size: 120px;
   color: black;
   line-height: 1.2;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 40px; }
+
+.thrid-title {
+  font-size: 28px;
+  margin-left: 25px; }
 
 .main-btn {
   background-color: blue;
@@ -31,7 +37,9 @@ html {
   height: 30px; }
 
 .background_title {
-  font-size: 150px;
+  text-align: center;
+  margin: auto;
+  font-size: 100px;
   color: rgba(231, 231, 231, 0.702);
   line-height: 1.2;
   text-align: left;
@@ -39,8 +47,9 @@ html {
   -webkit-transform: matrix(2.31683, 0, 0, 2.31528, 0, 0);
   -ms-transform: matrix(2.31683, 0, 0, 2.31528, 0, 0);
   position: absolute;
-  left: 406px;
-  top: 48px; }
+  left: 460px;
+  top: 107px;
+  text-transform: uppercase; }
 
 .logoImg {
   z-index: 5;
@@ -54,3 +63,12 @@ html {
 .menuImg {
   width: 15px;
   height: 15px; }
+
+.menuImgRight {
+  width: 35px;
+  height: 35px;
+  margin-right: 50px;
+  margin-left: 20px; }
+
+.menu_link {
+  display: inline-block; }

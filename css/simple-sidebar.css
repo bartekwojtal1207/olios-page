@@ -30,8 +30,8 @@ body {
     width: 0;
     height: 100%;
     margin-left: -250px;
-    overflow-y: auto;
-    background: #000;
+    /*overflow-y: auto;*/
+    background: #FFF;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -70,12 +70,53 @@ body {
 #menu-toggle{ /*btn*/
     position: fixed;
     z-index: 5;
+    margin-top: 40px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*border-top: 5px solid blue;*/
+}
+#menu-toggle::after, #menu-toggle::before{
+  content: "";
+  position: absolute;
+  top:0px;
+  left:3px;
+  width: 85%;
+  border-top: 5px solid blue;
+}
+#menu-toggle::after{
+  transform: translateY(12px);
+}
+#menu-toggle::before{
+  transform: translateY(22px);
+}
+/*#menu-toggle:focus{
+  transform: rotate(45deg);
+}*/
+/*#menu-toggle:focus::after{
+  transform: rotate(-90deg) translate(-18px);
+}
+#menu-toggle:focus::before{
+  transform: translateX(0px);
+  transform: translateY(18px);
+}*/
+#menu-toggle .clicked{
+  transform: rotate(45deg);
+  width: 100px;
+}
+#menu-toggle .clicked::after {
+  transform: rotate(-90deg) translate(-18px);
+}
+#menu-toggle .clicked::before {
+    transform: translateY(18px);
 }
 .sidebar-nav {
     position: absolute;
     top: 0;
     width: 250px;
     margin: 0;
+    margin-top: 180px;
     padding: 0;
     list-style: none;
 }
@@ -83,7 +124,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 0;
     list-style: none;
     text-align: center;
@@ -93,10 +134,13 @@ body {
     text-indent: 20px;
     line-height: 40px;
     margin: auto;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .sidebar-nav-left li {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
@@ -106,11 +150,11 @@ body {
     color: #999999;
 }
 
-.sidebar-nav li a:hover {
+/*.sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
-}
+}*/
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
