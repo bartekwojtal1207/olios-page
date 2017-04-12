@@ -89,23 +89,75 @@ html {
   margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden;
-  height: 300px; }
-  .product p {
-    display: block; }
+  height: 300px;
+  display: flex;
+  flex-direction: column; }
+  .product .product_title {
+    display: block;
+    font-size: 20px;
+    color: black;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -webkit-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -ms-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0); }
+  .product .product_description {
+    font-size: 10px;
+    color: #a8a8a8;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -webkit-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -ms-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0); }
+  .product .product_prize {
+    font-size: 14px;
+    font-family: "Lato";
+    color: #0023ff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -webkit-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
+    -ms-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0); }
+
+.horizontally {
+  display: block; }
+  .horizontally .product_title {
+    display: block;
+    text-align: left;
+    margin-top: 55px; }
+  .horizontally .product_description {
+    text-align: left; }
+  .horizontally .product_prize {
+    text-align: left;
+    margin-top: 60px; }
+
+#redSeatPhoto {
+  width: 130px;
+  height: 150px;
+  margin: auto; }
 
 #whiteTablePhoto {
-  width: 400px;
-  /* margin-bottom: 200px; */
+  width: 350px;
+  display: block;
   position: relative;
   float: left;
-  top: -90px; }
+  top: -20px; }
+
+#blueSeatPhoto {
+  height: 150px;
+  width: 130px;
+  margin: auto; }
 
 #modernBedPhoto {
-  width: 300px;
-  position: relative;
-  float: left; }
-
-#darkSeatPhoto {
   width: 200px;
   position: relative;
-  float: left; }
+  float: left;
+  top: 50px; }
+
+#darkSeatPhoto {
+  width: 130px;
+  height: 150px;
+  position: relative;
+  float: left;
+  margin: auto; }

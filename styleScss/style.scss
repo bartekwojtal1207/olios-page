@@ -79,6 +79,7 @@ margin-top: 40px;
 .menu_link{
   display: inline-block;
 }
+// categoty section
 .category-section{
   background-color: #f1f1f1;
   .container-fluid{
@@ -103,24 +104,84 @@ margin-top: 40px;
   margin-bottom:20px;
   overflow: hidden;
   height: 300px;
-  p{
+  display: flex;
+  flex-direction: column;
+  .product_title{
     display: block;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -webkit-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -ms-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    }
+  .product_description{
+    font-size: 10px;
+    color: rgb(168, 168, 168);
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -webkit-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -ms-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    }
+  .product_prize{
+    font-size: 14px;
+    font-family: "Lato";
+    color: rgb(0, 35, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -webkit-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+    -ms-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
+
+    }
+
   }
+  .horizontally{
+    display: block;
+    .product_title{
+      display: block;
+      text-align: left;
+      margin-top: 55px;
+      }
+    .product_description{
+      text-align: left;
+      }
+    .product_prize{
+      text-align: left;
+      margin-top: 60px;
+      }
+  }
+#redSeatPhoto{
+  width: 130px;
+  height: 150px;
+  margin: auto;
+
 }
 #whiteTablePhoto{
-    width: 400px;
-  /* margin-bottom: 200px; */
+    width: 350px;
+  display: block;
   position: relative;
   float: left;
-  top: -90px;
+  top: -20px;
+}
+#blueSeatPhoto{
+  height: 150px;
+  width: 130px;
+  margin: auto;
 }
 #modernBedPhoto{
-  width: 300px;
-  position: relative;
-  float: left;
-}
-#darkSeatPhoto{
   width: 200px;
   position: relative;
   float: left;
+  top: 50px;
+}
+#darkSeatPhoto{
+  width: 130px;
+  height: 150px;
+  position: relative;
+  float: left;
+  margin: auto;
 }
