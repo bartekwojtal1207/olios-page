@@ -106,17 +106,18 @@ margin-top: 40px;
   height: 300px;
   display: flex;
   flex-direction: column;
-  .product_title{
+  .category_title{
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(0, 0, 0);
     line-height: 1.2;
+    text-transform: uppercase;
     text-align: center;
     -moz-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
     -webkit-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
     -ms-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
     }
-  .product_description{
+  .category_description{
     font-size: 10px;
     color: rgb(168, 168, 168);
     line-height: 1.2;
@@ -125,7 +126,7 @@ margin-top: 40px;
     -webkit-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
     -ms-transform: matrix( 1.5536851985997,0,0,1.55952380952381,0,0);
     }
-  .product_prize{
+  .category_prize{
     font-size: 14px;
     font-family: "Lato";
     color: rgb(0, 35, 255);
@@ -141,15 +142,15 @@ margin-top: 40px;
   }
   .horizontally{
     display: block;
-    .product_title{
+    .category_title{
       display: block;
       text-align: left;
       margin-top: 55px;
       }
-    .product_description{
+    .category_description{
       text-align: left;
       }
-    .product_prize{
+    .category_prize{
       text-align: left;
       margin-top: 60px;
       }
@@ -184,4 +185,17 @@ margin-top: 40px;
   position: relative;
   float: left;
   margin: auto;
+}
+// product page
+.small_nav_product{
+  display: flex;
+  flex-direction:row;
+}
+.show_product{
+  height: 500px;
+  background-color: green;
+}
+.description_product{
+  height: 400px;
+  background-color: orange;
 }

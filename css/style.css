@@ -92,16 +92,17 @@ html {
   height: 300px;
   display: flex;
   flex-direction: column; }
-  .product .product_title {
+  .product .category_title {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     line-height: 1.2;
+    text-transform: uppercase;
     text-align: center;
     -moz-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
     -webkit-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
     -ms-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0); }
-  .product .product_description {
+  .product .category_description {
     font-size: 10px;
     color: #a8a8a8;
     line-height: 1.2;
@@ -109,7 +110,7 @@ html {
     -moz-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
     -webkit-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0);
     -ms-transform: matrix(1.55369, 0, 0, 1.55952, 0, 0); }
-  .product .product_prize {
+  .product .category_prize {
     font-size: 14px;
     font-family: "Lato";
     color: #0023ff;
@@ -122,13 +123,13 @@ html {
 
 .horizontally {
   display: block; }
-  .horizontally .product_title {
+  .horizontally .category_title {
     display: block;
     text-align: left;
     margin-top: 55px; }
-  .horizontally .product_description {
+  .horizontally .category_description {
     text-align: left; }
-  .horizontally .product_prize {
+  .horizontally .category_prize {
     text-align: left;
     margin-top: 60px; }
 
@@ -161,3 +162,15 @@ html {
   position: relative;
   float: left;
   margin: auto; }
+
+.small_nav_product {
+  display: flex;
+  flex-direction: row; }
+
+.show_product {
+  height: 500px;
+  background-color: green; }
+
+.description_product {
+  height: 400px;
+  background-color: orange; }
