@@ -169,38 +169,44 @@ html {
 
 .show_product {
   height: 540px;
-  background-color: green; }
+  background-color: green;
+  display: flex;
+  justify-content: center; }
   .show_product img {
     width: 400px;
     height: 450px;
     margin: 75px 0px 0px 60px; }
-  .show_product .circle-plus {
-    height: 1em;
-    width: 1em;
-    font-size: 1em;
-    margin-left: 200px;
-    display: inline-block;
-    /*Will change icon size*/ }
-  .show_product .circle-plus .circle {
-    position: relative;
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 100%;
-    border: solid .3em #DFDAD7; }
-  .show_product .circle-plus .circle .horizontal {
-    position: absolute;
-    background-color: #DFDAD7;
-    width: .3em;
-    height: 1em;
-    top: 0em;
-    left: 0.35em; }
-  .show_product .circle-plus .circle .vertical {
-    position: absolute;
-    background-color: #DFDAD7;
-    width: 1em;
-    height: .3em;
-    top: .2em;
-    left: -0.1em; }
+
+.circle-plus {
+  height: 1em;
+  width: 1em;
+  font-size: 1em;
+  margin-left: 200px;
+  display: inline-block;
+  /*Will change icon size*/ }
+
+.circle-plus .circle {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  border: solid .2em #DFDAD7; }
+
+.circle-plus .circle .horizontal {
+  position: absolute;
+  background-color: #DFDAD7;
+  width: .3em;
+  height: 1em;
+  top: 0em;
+  left: 0.35em; }
+
+.circle-plus .circle .vertical {
+  position: absolute;
+  background-color: #DFDAD7;
+  width: 1em;
+  height: .3em;
+  top: .2em;
+  left: -0.1em; }
 
 .description_product {
   height: 400px;
@@ -209,7 +215,20 @@ html {
 .recomended {
   display: flex;
   justify-content: flex-end; }
-  .recomended img {
-    width: 160px;
-    height: 160px;
-    margin-left: 20px; }
+  .recomended .recomended_product {
+    display: flex;
+    flex-direction: column; }
+    .recomended .recomended_product img {
+      width: 120px;
+      height: 100px;
+      margin-left: 20px; }
+    .recomended .recomended_product p {
+      margin: auto; }
+
+.recomended_title {
+  color: red;
+  transform: rotate(-90deg);
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: gray;
+  text-transform: uppercase; }
