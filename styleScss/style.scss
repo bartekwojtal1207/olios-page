@@ -222,9 +222,10 @@ margin-top: 40px;
   display: flex;
   justify-content: center;
   img{
-    width: 400px;
-    height: 450px;
-    margin: 40px 0px 0px 60px;
+    width: 25em;
+    height: 24em;
+    margin: 4em 0em 0em 0em;
+
   }
 }
 .panel_photo{
@@ -233,6 +234,7 @@ margin-top: 40px;
     width: 1.7em;
     height: 1.7em;
     margin-left: 3em;
+    cursor: pointer;
   }
 }
   .circle-plus {height:1em; width:1em; font-size:1em; margin-left: 200px; display: inline-block;/*Will change icon size*/}
@@ -245,11 +247,13 @@ margin-top: 40px;
   font-size: 1em;
   background-color: #f0f0f0;
   h3{
-    font-size: 3em;
+    font-size: 2.5em;
     padding-top: 2em;
-    padding-left: 2em;
+    padding-left: 2.3em;
     margin: 0em;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
+
     span{
       color: blue;
     }
@@ -265,21 +269,37 @@ margin-top: 40px;
     margin-left: 5.45em;
     margin-top: 1em;
     tr{
-
+      .description_table{
+        font-size: .7em;
+        text-transform: uppercase;
+      }
+      .prize{
+        span{
+            color: #0023ff;
+            font-size: 2em;
+          }
+      }
       td{
         border: 0em;
         button{
-          width: 9em;
+          height: 2.5em;
+          width: 10em;
           margin-left: 2em;
           background-color: #0023ff;
           color: white;
+          border-radius: 5em;
+          text-transform: uppercase;
+          border-color:  #0023ff;
+          display: inline-block;
         }
       }
       .result_table{
         background-color: white;
-        color: blue;
-        width: 1em;
+        width: 3em;
+        height: 2.5em;
+        display: inline-block;
         border-radius: 5em;
+        padding-top: 0.4em;
       }
     }
   }
@@ -287,7 +307,7 @@ margin-top: 40px;
 .recomended{
   display: flex;
   justify-content: space-around;
-
+  border-left: .1em solid #f0f0f0;
   .recomended_product{
     display: flex;
     flex-direction: column;
@@ -298,10 +318,9 @@ margin-top: 40px;
     }
     p{
       margin: auto;
-      }
-
-
+      text-transform: uppercase;
     }
+   }
   }
   .recomended_title{
     width: 0em;

@@ -194,15 +194,16 @@ html {
   display: flex;
   justify-content: center; }
   .show_product img {
-    width: 400px;
-    height: 450px;
-    margin: 40px 0px 0px 60px; }
+    width: 25em;
+    height: 24em;
+    margin: 4em 0em 0em 0em; }
 
 .panel_photo img {
   float: right;
   width: 1.7em;
   height: 1.7em;
-  margin-left: 3em; }
+  margin-left: 3em;
+  cursor: pointer; }
 
 .circle-plus {
   height: 1em;
@@ -240,11 +241,12 @@ html {
   font-size: 1em;
   background-color: #f0f0f0; }
   .description_product h3 {
-    font-size: 3em;
+    font-size: 2.5em;
     padding-top: 2em;
-    padding-left: 2em;
+    padding-left: 2.3em;
     margin: 0em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
     .description_product h3 span {
       color: blue; }
   .description_product p {
@@ -256,22 +258,36 @@ html {
     font-size: 1em;
     margin-left: 5.45em;
     margin-top: 1em; }
+    .description_product table tr .description_table {
+      font-size: .7em;
+      text-transform: uppercase; }
+    .description_product table tr .prize span {
+      color: #0023ff;
+      font-size: 2em; }
     .description_product table tr td {
       border: 0em; }
       .description_product table tr td button {
-        width: 9em;
+        height: 2.5em;
+        width: 10em;
         margin-left: 2em;
         background-color: #0023ff;
-        color: white; }
+        color: white;
+        border-radius: 5em;
+        text-transform: uppercase;
+        border-color: #0023ff;
+        display: inline-block; }
     .description_product table tr .result_table {
       background-color: white;
-      color: blue;
-      width: 1em;
-      border-radius: 5em; }
+      width: 3em;
+      height: 2.5em;
+      display: inline-block;
+      border-radius: 5em;
+      padding-top: 0.4em; }
 
 .recomended {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  border-left: .1em solid #f0f0f0; }
   .recomended .recomended_product {
     display: flex;
     flex-direction: column; }
@@ -280,7 +296,8 @@ html {
       height: 150px;
       margin-left: 20px; }
     .recomended .recomended_product p {
-      margin: auto; }
+      margin: auto;
+      text-transform: uppercase; }
 
 .recomended_title {
   width: 0em;
