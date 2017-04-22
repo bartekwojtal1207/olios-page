@@ -163,9 +163,31 @@ html {
   float: left;
   margin: auto; }
 
+.col-md-7 {
+  padding-right: 0em; }
+
 .small_nav_product {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #f0f0f0; }
+  .small_nav_product h3 {
+    font-size: 2em;
+    margin-left: 3em;
+    text-transform: uppercase; }
+  .small_nav_product p {
+    position: relative;
+    top: 2em;
+    text-transform: uppercase;
+    left: 8em; }
+  .small_nav_product img {
+    width: 2em;
+    height: 2em;
+    margin-top: 1.5em;
+    margin-left: 9em; }
+  .small_nav_product #menu-toggle {
+    top: 1em;
+    left: 90em;
+    margin: 0em; }
 
 .show_product {
   height: 540px;
@@ -174,7 +196,13 @@ html {
   .show_product img {
     width: 400px;
     height: 450px;
-    margin: 75px 0px 0px 60px; }
+    margin: 40px 0px 0px 60px; }
+
+.panel_photo img {
+  float: right;
+  width: 1.7em;
+  height: 1.7em;
+  margin-left: 3em; }
 
 .circle-plus {
   height: 1em;
@@ -208,7 +236,8 @@ html {
   left: -0.1em; }
 
 .description_product {
-  height: 400px;
+  height: 26em;
+  font-size: 1em;
   background-color: #f0f0f0; }
   .description_product h3 {
     font-size: 3em;
@@ -231,7 +260,9 @@ html {
       border: 0em; }
       .description_product table tr td button {
         width: 9em;
-        margin-left: 2em; }
+        margin-left: 2em;
+        background-color: #0023ff;
+        color: white; }
     .description_product table tr .result_table {
       background-color: white;
       color: blue;
