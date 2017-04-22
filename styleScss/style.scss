@@ -240,7 +240,13 @@ margin-top: 40px;
   .circle-plus {height:1em; width:1em; font-size:1em; margin-left: 200px; display: inline-block;/*Will change icon size*/}
   .circle-plus .circle {position: relative; width: 1.5em; height: 1.5em; border-radius: 100%; border: solid .2em #DFDAD7;}
   .circle-plus .circle .horizontal {position: absolute; background-color: #DFDAD7; width: .3em; height: 1em; top: 0em; left: 0.35em;}
-  .circle-plus .circle .vertical {position: absolute; background-color: #DFDAD7; width: 1em; height: .3em; top: .2em; left: -0.1em;}
+  .circle-plus .circle .vertical {
+    position: absolute;
+    background-color: #DFDAD7;
+    width: 1.3em;
+    height: .3em;
+    top: .4em;
+    left: -0.1em;}
 
 .description_product{
   height: 26em;
@@ -274,6 +280,7 @@ margin-top: 40px;
         text-transform: uppercase;
       }
       .prize{
+        width: 14em;
         span{
             color: #0023ff;
             font-size: 2em;
@@ -282,8 +289,8 @@ margin-top: 40px;
       td{
         border: 0em;
         button{
-          height: 2.5em;
-          width: 10em;
+          height: 2.3em;
+          width: 9em;
           margin-left: 2em;
           background-color: #0023ff;
           color: white;
@@ -296,10 +303,11 @@ margin-top: 40px;
       .result_table{
         background-color: white;
         width: 3em;
-        height: 2.5em;
+        height: 2.3em;
         display: inline-block;
         border-radius: 5em;
         padding-top: 0.4em;
+        padding-left: 0.5em;
       }
     }
   }
@@ -319,6 +327,11 @@ margin-top: 40px;
     p{
       margin: auto;
       text-transform: uppercase;
+      span{
+        display: block;
+        font-size: 0.5em;
+        color: lightgray;
+      }
     }
    }
   }
