@@ -220,6 +220,7 @@ margin-top: 40px;
 .show_product{
   height: 540px;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   img{
     width: 25em;
@@ -319,6 +320,7 @@ margin-top: 40px;
   .recomended_product{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     img{
       width: 150px;
       height: 150px;

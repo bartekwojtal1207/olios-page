@@ -192,6 +192,7 @@ html {
 .show_product {
   height: 540px;
   display: flex;
+  cursor: pointer;
   justify-content: center; }
   .show_product img {
     width: 25em;
@@ -293,7 +294,8 @@ html {
   border-left: .1em solid #f0f0f0; }
   .recomended .recomended_product {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    cursor: pointer; }
     .recomended .recomended_product img {
       width: 150px;
       height: 150px;
