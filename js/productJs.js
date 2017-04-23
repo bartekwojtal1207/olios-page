@@ -10,23 +10,7 @@ $(document).ready(function(){
   var nav_foto = $(".recomended_product").find("img");
 
   nav_foto.on("click",function(){
-    var main_foto = $(".show_product").children();
-    main_foto.css("display","none");
-    var title_seat = $(main_foto).data("title");
-    var foto_source = $(main_foto).attr("src");
-    var new_foto = $(this).attr("src");
-    var product_title = $(this).data("title");
-    var title_page = $(".title_description");
-    main_foto.attr("src",new_foto);
-    main_foto.data("title",product_title);
-    $(this).next().text(title_seat);
-    title_page.text(product_title);
-    $(this).attr("src",foto_source);
-    $(this).data("title",title_seat);
-    main_foto.fadeIn(2000);
-//    main_foto.data("title");
-    console.log(product_title);
-    console.log(title_seat);
+      switch_Foto($(this));
   });
   nav_foto.on("mouseenter",function(){
     $(this).css("opacity","0.5");
@@ -34,5 +18,20 @@ $(document).ready(function(){
   nav_foto.on("mouseleave",function(){
     $(this).css("opacity","1");
   });
-
+  function switch_Foto(img){
+    var main_foto = $(".show_product").children();
+    var title_seat = $(main_foto).data("title");
+    var foto_source = $(main_foto).attr("src");
+    var new_foto = $(img).attr("src");
+    var product_title = $(img).data("title");
+    var title_page = $(".title_description");
+    main_foto.css("display","none");
+    main_foto.attr("src",new_foto);
+    $(img).next().text(title_seat);
+    $(img).attr("src",foto_source);
+    $(img).data("title",title_seat);
+    title_page.text(product_title);
+    main_foto.data("title",product_title);
+    main_foto.fadeIn(2000);
+  };
 });
