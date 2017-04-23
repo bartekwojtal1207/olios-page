@@ -247,9 +247,13 @@ html {
     padding-left: 2.3em;
     margin: 0em;
     text-transform: uppercase;
-    letter-spacing: 0.05em; }
-    .description_product h3 span {
-      color: blue; }
+    letter-spacing: 0.05em;
+    color: blue;
+    display: inline-block; }
+  .description_product h3:last-of-type {
+    color: black;
+    display: inline-block;
+    padding-left: .5em; }
   .description_product p {
     margin-top: 1em;
     font-size: 1em;
@@ -303,10 +307,10 @@ html {
     .recomended .recomended_product p {
       margin: auto;
       text-transform: uppercase; }
-      .recomended .recomended_product p span {
-        display: block;
-        font-size: 0.5em;
-        color: lightgray; }
+    .recomended .recomended_product p:last-of-type {
+      display: block;
+      font-size: 0.5em;
+      color: lightgray; }
 
 .recomended_title {
   width: 0em;

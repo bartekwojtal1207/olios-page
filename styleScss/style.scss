@@ -260,10 +260,13 @@ margin-top: 40px;
     margin: 0em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-
-    span{
-      color: blue;
-    }
+    color: blue;
+    display: inline-block;
+  }
+  h3:last-of-type{
+    color: black;
+    display: inline-block;
+    padding-left: .5em;
   }
   p{
     margin-top: 1em;
@@ -329,14 +332,14 @@ margin-top: 40px;
     p{
       margin: auto;
       text-transform: uppercase;
-      span{
-        display: block;
-        font-size: 0.5em;
-        color: lightgray;
-      }
+    }
+    p:last-of-type{
+      display: block;
+      font-size: 0.5em;
+      color: lightgray;
     }
    }
-  }
+ }// koneic recomenend
   .recomended_title{
     width: 0em;
     height: 2em;
