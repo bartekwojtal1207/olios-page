@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var product_counter = 1;
+  var product_counter = 0;
   var plus_item_btn = $(".triangle");
   var minus_item_btn = $(".triangle_bottom");
   var quanity = $(".result_table");
@@ -14,15 +14,12 @@ $(document).ready(function(){
   quanity.text(product_counter);
   });
   minus_item_btn.on("click",function(klik){
-  if(product_counter > 0 ){
-    quanity.text(product_counter);
-  }
-  else if (product_counter < 0 ) {
-    product_counter == Math.abs(product_counter);
-    quanity.text(Math.abs(product_counter));
-    product_counter = 1 ;
-  }
-  product_counter --;
+    product_counter --;
+  if(product_counter <= 1 ){
+    console.log('asdasd');
+    product_counter =0;
+   }
+   quanity.text(product_counter);
   });
  order_panel.css("width","0").css("border","0em");
   add_order_btn.on("click",function(){
