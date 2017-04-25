@@ -341,12 +341,43 @@ margin-top: 40px;
         border-top: 5px solid lightgray;
         position: relative;
         top: 1.3em;
-        left: -2.15em;
+        left: -2.2em;
         z-index: 7;
         display: inline;
         &:hover{
           cursor: pointer;
         }
+      }
+    }
+  }// koniec table
+  .order{
+    position: absolute;
+    top: 1em;
+    left: -27em;
+    width: 13em;
+    height: 5em;
+    background-color: #f0f0f0;
+    border: .1em solid lightgray;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.2em;
+    h3{
+    padding: 0em;
+    font-size: 1em;
+    border-bottom: .1em solid black;
+    background: white;
+    width: 100%;
+    }
+    p{
+      margin: 0em;
+      line-height: 2em;
+      display: block;
+      width: 220px;
+    //  text-align: justify;
+      margin-left: .1em;
+      span{
+        color:blue;
+        display: inline-block;
       }
     }
   }

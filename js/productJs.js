@@ -3,6 +3,10 @@ $(document).ready(function(){
   var plus_item_btn = $(".triangle");
   var minus_item_btn = $(".triangle_bottom");
   var quanity = $(".result_table");
+  var add_order_btn = $("#add_card_button");
+  var order_panel  = $(".order");
+  var order_element = $(".order p span");
+
   quanity.text(product_counter);
 
   plus_item_btn.on("click",function(){
@@ -19,6 +23,21 @@ $(document).ready(function(){
     product_counter = 1 ;
   }
   product_counter --;
+  });
+ order_panel.css("width","0").css("border","0em");
+  add_order_btn.on("click",function(){
+    order_element.text(product_counter);
+    order_panel.animate({
+       display: "visible",
+        width: "14em",
+        border: ".1em",
+        border: "solid",
+        border: "lightgray"
+
+    },2000).delay(2000).animate({
+      width: "0em",
+      border: "0em"
+    },2000)
   });
 
 

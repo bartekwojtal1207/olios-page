@@ -315,11 +315,37 @@ html {
       border-top: 5px solid lightgray;
       position: relative;
       top: 1.3em;
-      left: -2.15em;
+      left: -2.2em;
       z-index: 7;
       display: inline; }
       .description_product table tr .triangle_bottom:hover {
         cursor: pointer; }
+  .description_product .order {
+    position: absolute;
+    top: 1em;
+    left: -27em;
+    width: 13em;
+    height: 5em;
+    background-color: #f0f0f0;
+    border: .1em solid lightgray;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.2em; }
+    .description_product .order h3 {
+      padding: 0em;
+      font-size: 1em;
+      border-bottom: .1em solid black;
+      background: white;
+      width: 100%; }
+    .description_product .order p {
+      margin: 0em;
+      line-height: 2em;
+      display: block;
+      width: 220px;
+      margin-left: .1em; }
+      .description_product .order p span {
+        color: blue;
+        display: inline-block; }
 
 .recomended {
   display: flex;
