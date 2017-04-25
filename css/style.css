@@ -163,6 +163,9 @@ html {
   float: left;
   margin: auto; }
 
+.product_section {
+  font-family: 'Lato', sans-serif; }
+
 .col-md-7 {
   padding-right: 0em; }
 
@@ -178,31 +181,31 @@ html {
     position: relative;
     top: 2em;
     text-transform: uppercase;
-    left: 8em; }
+    left: 9em; }
   .small_nav_product img {
     width: 2em;
     height: 2em;
     margin-top: 1.5em;
-    margin-left: 9em; }
+    margin-left: 10em; }
   .small_nav_product #menu-toggle {
     top: 1em;
     left: 90em;
     margin: 0em; }
 
 .show_product {
-  height: 540px;
+  height: 39em;
   display: flex;
   cursor: pointer;
   justify-content: center; }
   .show_product img {
     width: 25em;
     height: 24em;
-    margin: 4em 0em 0em 0em; }
+    margin: 6em 0em 0em 0em; }
 
 .panel_photo img {
   float: right;
-  width: 1.7em;
-  height: 1.7em;
+  width: 1.2em;
+  height: 1.2em;
   margin-left: 3em;
   cursor: pointer; }
 
@@ -210,7 +213,7 @@ html {
   height: 1em;
   width: 1em;
   font-size: 1em;
-  margin-left: 200px;
+  margin-left: 5em;
   display: inline-block;
   /*Will change icon size*/ }
 
@@ -225,9 +228,9 @@ html {
   position: absolute;
   background-color: #DFDAD7;
   width: .3em;
-  height: 1em;
+  height: 1.2em;
   top: 0em;
-  left: 0.35em; }
+  left: 0.4em; }
 
 .circle-plus .circle .vertical {
   position: absolute;
@@ -291,6 +294,32 @@ html {
       border-radius: 5em;
       padding-top: 0.4em;
       padding-left: 0.5em; }
+    .description_product table tr .triangle {
+      width: 0px;
+      height: 0px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid lightgray;
+      position: relative;
+      top: -1em;
+      left: -1.5em;
+      z-index: 5;
+      display: inline; }
+      .description_product table tr .triangle:hover {
+        cursor: pointer; }
+    .description_product table tr .triangle_bottom {
+      width: 0px;
+      height: 0px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 5px solid lightgray;
+      position: relative;
+      top: 1.3em;
+      left: -2.15em;
+      z-index: 7;
+      display: inline; }
+      .description_product table tr .triangle_bottom:hover {
+        cursor: pointer; }
 
 .recomended {
   display: flex;
@@ -299,10 +328,11 @@ html {
   .recomended .recomended_product {
     display: flex;
     flex-direction: column;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 1em; }
     .recomended .recomended_product img {
-      width: 150px;
-      height: 150px;
+      width: 10em;
+      height: 10em;
       margin-left: 20px; }
     .recomended .recomended_product p {
       margin: auto;

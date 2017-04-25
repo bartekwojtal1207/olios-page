@@ -1,14 +1,28 @@
 $(document).ready(function(){
   var product_counter = 1;
-  var card_btn = $("#add_card_button");
+  var plus_item_btn = $(".triangle");
+  var minus_item_btn = $(".triangle_bottom");
   var quanity = $(".result_table");
   quanity.text(product_counter);
-  card_btn.on("click",function(){
-    product_counter ++;
-    quanity.text(product_counter);
-  });
-  var nav_foto = $(".recomended_product").find("img");
 
+  plus_item_btn.on("click",function(){
+  product_counter ++;
+  quanity.text(product_counter);
+  });
+  minus_item_btn.on("click",function(klik){
+  if(product_counter > 0 ){
+    quanity.text(product_counter);
+  }
+  else if (product_counter < 0 ) {
+    product_counter == Math.abs(product_counter);
+    quanity.text(Math.abs(product_counter));
+    product_counter = 1 ;
+  }
+  product_counter --;
+  });
+
+
+  var nav_foto = $(".recomended_product").find("img");
   nav_foto.on("click",function(){
       switch_Foto($(this));
   });
