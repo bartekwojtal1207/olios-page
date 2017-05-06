@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
     return gulp.src('styleScss/style.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('css'));
   });
   gulp.task('sassRwd', function() {
-    return gulp.src('styleScssRwd/style.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('cssRwd'));
+    return gulp.src('styleScssRwd/productRwd.scss').pipe(sass({errLogToConsole: true})).pipe(gulp.dest('cssRwd'));
   });
   gulp.task('watch', function(){
     gulp.watch('styleScss/*.scss', ['sass']);

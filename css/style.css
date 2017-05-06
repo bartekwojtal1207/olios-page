@@ -243,6 +243,7 @@ html {
 .description_product {
   height: 26em;
   font-size: 1em;
+  width: initial;
   background-color: #f0f0f0; }
   .description_product h3 {
     font-size: 2.5em;

@@ -1,0 +1,55 @@
+
+
+@media (max-width: 991px) {
+
+  .description_product h3{
+    font-size: 2em;
+  }
+  .description_product p {
+    margin-right: 0em;
+  }
+  .description_product table tr .prize {
+    width: 10em;
+  }
+  .small_nav_product #menu-toggle {
+    top: 3em;
+    left: 55em;
+    margin: 0em;
+  }
+}
+@media (max-width: 930px) {
+
+.description_product table tr td button {
+    height: 2.3em;
+    width: 9em;
+    margin-top: 2em;
+    /* margin-left: 2em; */
+    background-color: #0023ff;
+    color: white;
+    border-radius: 5em;
+    text-transform: uppercase;
+    border-color: #0023ff;
+    /* display: inline-block; */
+    display: block;
+  }
+}
+@media (max-width: 787px) {
+  .description_product h3{
+    font-size: 1.5em;
+  }
+  .small_nav_product img{
+    display: none;
+  }
+  .small_nav_product p {
+    top: 0em;
+    left: 1em;
+  }
+  .small_nav_product #menu-toggle {
+    left: 54em;
+  }
+}
+@media (max-width: 787px) {
+  .description_product table tr td button {
+    margin-top: 5px;
+  }
+}

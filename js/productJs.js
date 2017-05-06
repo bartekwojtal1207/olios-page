@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   var product_counter = 0;
   var plus_item_btn = $(".triangle");
@@ -10,27 +11,25 @@ $(document).ready(function(){
   quanity.text(product_counter);
 
   plus_item_btn.on("click",function(){
-  product_counter ++;
-  quanity.text(product_counter);
+    product_counter ++;
+    quanity.text(product_counter);
   });
   minus_item_btn.on("click",function(klik){
     product_counter --;
-  if(product_counter <= 1 ){
-    console.log('asdasd');
-    product_counter =0;
-   }
-   quanity.text(product_counter);
+    if(product_counter <= 0){
+      product_counter =0;
+    }
+    quanity.text(product_counter);
   });
- order_panel.css("width","0").css("border","0em");
+  order_panel.css("width","0").css("border","0em");
   add_order_btn.on("click",function(){
     order_element.text(product_counter);
     order_panel.animate({
-       display: "visible",
-        width: "14em",
-        border: ".1em",
-        border: "solid",
-        border: "lightgray"
-
+      display: "visible",
+      width: "14em",
+      border: ".1em",
+      border: "solid",
+      border: "lightgray"
     },2000).delay(2000).animate({
       width: "0em",
       border: "0em"
@@ -40,7 +39,7 @@ $(document).ready(function(){
 
   var nav_foto = $(".recomended_product").find("img");
   nav_foto.on("click",function(){
-      switch_Foto($(this));
+    switch_Foto($(this));
   });
   nav_foto.on("mouseenter",function(){
     $(this).css("opacity","0.5");
@@ -64,4 +63,28 @@ $(document).ready(function(){
     main_foto.data("title",product_title);
     main_foto.fadeIn(2000);
   };
+  // zoom product
+  var zoom = 25;
+  var zoom_h = 24;
+  var zoom_btn = $(".circle").first();
+  var reduction_btn = $(".circle").last();
+
+  // var zoom_btn = $(".circle");
+  $(zoom_btn).on("click",function(){
+    console.log(reduction_btn);
+    zoom ++;
+    zoom_h ++;
+    var main_foto = $(".show_product").children();
+    main_foto.css("width",zoom+"em")
+    main_foto.css("height",zoom_h+"em")
+  });
+  $(reduction_btn).on("click",function(){
+    console.log(':sdas');
+    zoom --;
+    zoom_h --;
+    var main_foto = $(".show_product").children();
+    main_foto.css("width",zoom+"em")
+    main_foto.css("height",zoom_h+"em")
+  });
+
 });
