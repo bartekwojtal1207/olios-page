@@ -19,6 +19,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/js.js">
     </script>
+    <script type="text/javascript" src="js/category.js">
+    </script>
   </head>
   <body>
     <div id="wrapper-left">
@@ -90,11 +92,33 @@
           <div class=" col-md-2 col-sm-6 col-xs-12"></div>
         </div>
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12"></p><a href="#"><p class="footer_category">show more product</p></a></div>
+          <div class="col-md-12 col-sm-12 col-xs-12"><p class="footer_category">show more product</p></div>
         </div>
-
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="map_box">
+               <div id="map"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <script src="js/bootstrap.min.js"></script>
+      </section>
+      <script>
+     function initMap() {
+       var uluru = {lat: -25.363, lng: 131.044};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 4,
+         center: uluru
+       });
+       var marker = new google.maps.Marker({
+         position: uluru,
+         map: map
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdHP51aDW9zd_FsD0uPRD2jEXgEp00Fuc&callback=initMap">
+   </script>
+  <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

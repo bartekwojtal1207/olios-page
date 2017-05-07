@@ -86,6 +86,8 @@ body {
     font-size: 50px; }
   .category-section .footer_category {
     text-align: center; }
+    .category-section .footer_category:hover {
+      cursor: pointer; }
 
 .product {
   background-color: white;
@@ -382,3 +384,10 @@ body {
   font-size: 1.2em;
   color: gray;
   text-transform: uppercase; }
+
+.map_box {
+  margin-left: 44em; }
+  .map_box #map {
+    width: 50%;
+    height: 20em;
+    background-color: grey; }
