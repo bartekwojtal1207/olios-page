@@ -68,7 +68,9 @@ body {
 
 /* Sidebar Styles */
 #menu-toggle{ /*btn*/
-    position: fixed;
+    position: absolute;
+    top: 0em;
+    left: 86em;
     z-index: 5;
     margin-top: 40px;
     padding: 0px;

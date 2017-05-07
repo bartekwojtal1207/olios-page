@@ -2,7 +2,27 @@
   .description_product {
     overflow: hidden; } }
 
+@media (max-width: 1270px) {
+  #menu-toggle {
+    left: 80em; } }
+
+@media (max-width: 1178px) {
+  #menu-toggle {
+    left: 75em; } }
+
+@media (max-width: 1090px) {
+  #menu-toggle {
+    left: 70em; } }
+
+@media (max-width: 1025px) {
+  #menu-toggle {
+    left: 67em;
+    top: 2em; } }
+
 @media (max-width: 991px) {
+  #menu-toggle {
+    left: 45em;
+    top: 0em; }
   #add_card_button {
     display: inline-block;
     margin: 0em 0em 0em 0em; }
@@ -21,11 +41,7 @@
   .description_product table {
     margin-left: 6.45em; }
   .description_product table tr .prize {
-    width: 8em; }
-  .small_nav_product #menu-toggle {
-    top: 3em;
-    left: 55em;
-    margin: 0em; } }
+    width: 8em; } }
 
 @media (max-width: 950px) {
   #add_card_button {
@@ -76,6 +92,11 @@
   .description_product table tr td button {
     margin-top: 5px; } }
 
+@media (max-width: 670px) {
+  #menu-toggle {
+    left: 35em;
+    top: 0em; } }
+
 @media (max-width: 600px) {
   .show_product img {
     margin-left: 24em;
@@ -95,6 +116,11 @@
   #add_card_button {
     display: block; } }
 
+@media (max-width: 550px) {
+  #menu-toggle {
+    left: 27em;
+    top: 0em; } }
+
 @media (max-width: 520px) {
   .recomended_product:first-of-type {
     margin-left: 4em; } }
@@ -109,9 +135,15 @@
     width: 15em;
     height: 15em; }
   .description_product h3 {
-    margin-left: 0em; } }
+    margin-left: 0em; }
+  #menu-toggle {
+    left: 24em;
+    top: 2em; } }
 
 @media (max-width: 380px) {
+  #menu-toggle {
+    left: 20em;
+    top: 2em; }
   .recomended_product:first-of-type {
     margin-left: 14em; } }
 
@@ -125,6 +157,8 @@
     font-size: 1em; } }
 
 @media (max-width: 320px) {
+  #menu-toggle {
+    display: none; }
   .show_product img {
     width: 13em;
     height: 13em;

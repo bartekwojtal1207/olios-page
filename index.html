@@ -9,7 +9,9 @@
     <title>Olios</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/buttonRwd.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
     <!--<link rel="stylesheet" href="cssRwd/style.css" type="text/css"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous">
@@ -58,7 +60,7 @@
             </ul>
         </div>
       </div>
-
+        <button class="btn btn-default" id="menu-toggle"></button>
     <section class="main_section">
         <div class="container-fluid">
            <div class="row">
@@ -66,7 +68,7 @@
           </div>
           <div class="row">
             <div class="col-md-10 col-sm-6 col-xs-6"> <p class="text-justify background_title">newest</p></div>
-            <div class="col-md-2 col-sm-6 col-xs-6 " style=" display: flex; justify-content: flex-end;"><button class="btn btn-default" id="menu-toggle"></button></div><!--These are columns that keep their widths up to a screen resolution of 992px, below it each column, regardless of its size, occupies the entire width of the container, and sets it up under one another; widht >960. 3 col are next to each other; width 760(?) >= 2col next to each other and 1 col is lower; width = smarthphone evry col is lower-->
+            <div class="col-md-2 col-sm-6 col-xs-6 "></div><!--These are columns that keep their widths up to a screen resolution of 992px, below it each column, regardless of its size, occupies the entire width of the container, and sets it up under one another; widht >960. 3 col are next to each other; width 760(?) >= 2col next to each other and 1 col is lower; width = smarthphone evry col is lower-->
           </div>
           <div class="row">
             <div class="col-md-1 col-sm-2 col-xs-12 ">
@@ -80,7 +82,9 @@
           </div>
           <div class="row">
             <div class=" col-md-4  col-sm-12 col-xs-12"></div>
-            <div class=" col-md-4  col-sm-12 col-xs-12 btn-col"> <button type="button" name="button" class="main-btn">view more</button> </div>
+            <div class=" col-md-4  col-sm-12 col-xs-12 btn-col">
+              <a href="category.html"><button type="button" name="button" class="main-btn">view more</button></a>
+            </div>
             <div class=" col-md-4  col-sm-12 col-xs-12"></div>
           </div>
         </div>
