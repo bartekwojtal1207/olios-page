@@ -432,10 +432,11 @@ margin-top: 40px;
   }
 .map_box{
 //  float: right;
-//  display: none;
+  display: none;
   margin-left: 44em;
-#map{
   width: 50%;
+#map{
+  width: 100%;
   height: 20em;
   background-color: grey;
   }
