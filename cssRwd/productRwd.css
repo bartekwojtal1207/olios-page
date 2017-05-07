@@ -1,14 +1,34 @@
+@media (max-width: 1400px) {
+  .description_product {
+    overflow: hidden; } }
+
 @media (max-width: 991px) {
+  #add_card_button {
+    display: inline-block;
+    margin: 0em 0em 0em 0em; }
+  .result_table {
+    display: inline-block; }
+  .description_product {
+    overflow: hidden; }
   .description_product h3 {
-    font-size: 2em; }
+    font-size: 2em;
+    margin-left: 1em; }
   .description_product p {
-    margin-right: 0em; }
+    margin-right: 0em;
+    margin-left: 7em; }
+  .description_product table {
+    margin-left: 6.45em; }
   .description_product table tr .prize {
     width: 10em; }
   .small_nav_product #menu-toggle {
     top: 3em;
     left: 55em;
     margin: 0em; } }
+
+@media (max-width: 950px) {
+  #add_card_button {
+    display: inline-block;
+    margin: 2em 0em 0em 0em; } }
 
 @media (max-width: 930px) {
   .description_product table tr td button {
@@ -22,7 +42,16 @@
     text-transform: uppercase;
     border-color: #0023ff;
     /* display: inline-block; */
-    display: block; } }
+    display: block; }
+  .show_product {
+    height: 30em;
+    margin-bottom: 2em; }
+  .panel_photo {
+    display: none; } }
+
+@media (max-width: 810px) {
+  .show_product img {
+    margin-left: 20em; } }
 
 @media (max-width: 787px) {
   .description_product h3 {
@@ -36,5 +65,44 @@
     left: 54em; } }
 
 @media (max-width: 787px) {
+  h3.title_description {
+    margin-left: 2em; }
+  h3 {
+    margin-left: 0em; }
   .description_product table tr td button {
     margin-top: 5px; } }
+
+@media (max-width: 600px) {
+  .show_product img {
+    margin-left: 24em;
+    width: 20em;
+    height: 20em; }
+  .show_product {
+    height: 29em; }
+  .recomended {
+    overflow: scroll;
+    margin-left: 5em; }
+  .recomended_title {
+    display: none; }
+  h3.title_description {
+    margin-left: 2em; } }
+
+@media (max-width: 930px) {
+  #add_card_button {
+    display: block; } }
+
+@media (max-width: 420px) {
+  .show_product {
+    height: 20em; }
+  .show_product img {
+    margin-left: 12em;
+    width: 15em;
+    height: 15em; }
+  .description_product h3 {
+    margin-left: 2em; } }
+
+@media (max-width: 320px) {
+  .show_product img {
+    width: 13em;
+    height: 13em;
+    margin-left: 13em; } }
