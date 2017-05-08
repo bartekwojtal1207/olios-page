@@ -124,8 +124,8 @@
           <div class="col-md-6 col-sm-12 col-xs-12">
             <div class="stationary_addres">
                 <h3>For <span>more</span> please visit here:</h3>
-                <p>Wrocław</p>
-                <p>ul. Jesionowa 76/10</p>
+                <p style="color:red;">Wrocław</p>
+                <p style="color:red;">ul. Jesionowa 76/10</p>
             </div>
           </div>
         </div>
@@ -139,10 +139,17 @@
          zoom: 15,
          center: uluru,
          //gestureHandling: "none"
+         styles :[{"featureType": "all","elementType": "geometry","stylers": [{"color": "#63b5e5"}]},{"featureType": "all","elementType": "labels.text.fill","stylers": [{"gamma": 0.01},{"lightness": 20}]},{"featureType": "all","elementType": "labels.text.stroke","stylers": [{"saturation": -31},{"lightness": -33},{"weight": 2},{"gamma":0.8}]},{"featureType": "all","elementType": "labels.icon","stylers": [{"visibility": "off"}]},{"featureType": "landscape","elementType": "geometry","stylers": [{"lightness": 30},{
+                "saturation": 30}]},{"featureType": "poi","elementType": "geometry","stylers": [{"saturation": 20}]},{"featureType": "poi.park","elementType": "geometry","stylers": [{"lightness": 20},{"saturation": -20}]},{"featureType": "road","elementType": "geometry","stylers": [{"lightness": 10},{"saturation": -30}]},{"featureType": "road","elementType": "geometry.stroke","stylers": [{"saturation": 25},{
+                "lightness": 25}]},{"featureType": "road.arterial","elementType": "labels.text.fill","stylers": [{
+                "hue": "#00ff49"}]},{"featureType": "road.local","elementType": "geometry.fill","stylers": [{
+                "hue": "#ff3400"}]},{"featureType": "water","elementType": "all","stylers": [{
+                "lightness": -20}]}]
        });
        var marker = new google.maps.Marker({
          position: uluru,
-         map: map
+         map: map,
+         animation: google.maps.Animation.BOUNCE 
        });
      }
    </script>
