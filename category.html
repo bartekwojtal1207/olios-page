@@ -23,6 +23,28 @@
     </script>
   </head>
   <body>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+              <li>
+                  <a href="#"><p class="menu_link">living room</p> <img src="img/livingRoom.png" alt="living room" class="menuImgRight"></a>
+              </li>
+              <li>
+                  <a href="#"><p class="menu_link">office</p> <img src="img/office.png" alt="office" class="menuImgRight"></a>
+              </li>
+              <li>
+                  <a href="#"><p class="menu_link">for kids </p><img src="img/kids.png" alt="kids" class="menuImgRight"></a>
+              </li>
+              <li>
+                  <a href="#"><p class="menu_link">kitchen</p> <img src="img/kitchen.png" alt="kitchen" class="menuImgRight"></a>
+              </li>
+              <li>
+                  <a href="#"><p class="menu_link">accesories</p> <img src="img/accesories.png" alt="accesories" class="menuImgRight"></a>
+              </li>
+          </ul>
+      </div>
+    </div>
     <div id="wrapper-left">
       <!-- Sidebar left(still) -->
       <div id="sidebar-wrapper-left">
@@ -95,20 +117,24 @@
           <div class="col-md-12 col-sm-12 col-xs-12"><p class="footer_category">show more product</p></div>
         </div>
         <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="map_box">
+
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <!-- <div class="map_box"> -->
                <div id="map"></div>
-            </div>
+            <!-- </div> -->
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
           </div>
         </div>
       </div>
       </section>
       <script>
      function initMap() {
-       var uluru = {lat: 50.363, lng: 50.044};
+       var uluru = {lat: 51.0867, lng:17.0504};
        var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 4,
-         center: uluru
+         zoom: 15,
+         center: uluru,
+         gestureHandling: "none"
        });
        var marker = new google.maps.Marker({
          position: uluru,

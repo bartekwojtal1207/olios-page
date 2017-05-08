@@ -386,10 +386,13 @@ body {
   text-transform: uppercase; }
 
 .map_box {
+  float: right;
   display: none;
-  margin-left: 44em;
-  width: 50%; }
-  .map_box #map {
-    width: 100%;
-    height: 20em;
-    background-color: grey; }
+  height: 25em;
+  width: 100%; }
+
+#map {
+  width: 100%;
+  height: 350px;
+  background-color: grey;
+  margin-left: 225px; }
