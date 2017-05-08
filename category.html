@@ -116,16 +116,20 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12"><p class="footer_category">show more product</p></div>
         </div>
+        <section class="map_box">
         <div class="row">
-
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <!-- <div class="map_box"> -->
                <div id="map"></div>
-            <!-- </div> -->
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="stationary_addres">
+                <h3>For <span>more</span> please visit here:</h3>
+                <p>Wrocław</p>
+                <p>ul. Jesionowa 76/10</p>
+            </div>
           </div>
         </div>
+        </section>
       </div>
       </section>
       <script>
@@ -134,7 +138,7 @@
        var map = new google.maps.Map(document.getElementById('map'), {
          zoom: 15,
          center: uluru,
-         gestureHandling: "none"
+         //gestureHandling: "none"
        });
        var marker = new google.maps.Marker({
          position: uluru,

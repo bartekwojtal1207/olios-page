@@ -430,16 +430,36 @@ margin-top: 40px;
     color: gray;
     text-transform: uppercase;
   }
+//category sectiion map & addres
 .map_box{
-  float: right;
   display: none;
-   //margin-left: 10em;
-  height: 25em;
-  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
 }
+
 #map{
   width: 100%;
   height: 350px;
   background-color: grey;
   margin-left: 225px;
+  }
+  .stationary_addres{
+    width: 45%;
+    float: right;
+    margin-right: 10em;
+    h3{
+      text-align: justify;
+      width: 63%;
+      font-size: 3em;
+      span{
+        color:blue;
+      }
+    }
+    p{
+      font-size: 2em;
+    }
+    p:first-of-type{
+      margin-top: 2em;
+    }
   }

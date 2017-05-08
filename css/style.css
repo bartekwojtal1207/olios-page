@@ -386,13 +386,28 @@ body {
   text-transform: uppercase; }
 
 .map_box {
-  float: right;
   display: none;
-  height: 25em;
-  width: 100%; }
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
 
 #map {
   width: 100%;
   height: 350px;
   background-color: grey;
   margin-left: 225px; }
+
+.stationary_addres {
+  width: 45%;
+  float: right;
+  margin-right: 10em; }
+  .stationary_addres h3 {
+    text-align: justify;
+    width: 63%;
+    font-size: 3em; }
+    .stationary_addres h3 span {
+      color: blue; }
+  .stationary_addres p {
+    font-size: 2em; }
+  .stationary_addres p:first-of-type {
+    margin-top: 2em; }
