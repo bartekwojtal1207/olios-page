@@ -132,6 +132,9 @@
         </section>
       </div>
       </section>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdHP51aDW9zd_FsD0uPRD2jEXgEp00Fuc&callback=initMap">
+      </script>
       <script>
      function initMap() {
        var uluru = {lat: 51.0867, lng:17.0504};
@@ -149,13 +152,11 @@
        var marker = new google.maps.Marker({
          position: uluru,
          map: map,
-         animation: google.maps.Animation.BOUNCE 
+         animation: google.maps.Animation.BOUNCE
        });
      }
    </script>
-   <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdHP51aDW9zd_FsD0uPRD2jEXgEp00Fuc&callback=initMap">
-   </script>
+
   <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

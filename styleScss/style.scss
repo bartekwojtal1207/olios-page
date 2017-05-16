@@ -157,7 +157,7 @@ margin-top: 40px;
     .category_title{
       display: block;
       text-align: left;
-      margin-top: 55px;
+      margin-top: 5em;
       }
     .category_description{
       text-align: left;
@@ -186,10 +186,11 @@ margin-top: 40px;
   margin: auto;
 }
 #modernBedPhoto{
-  width: 200px;
+  width: 14em;
+  margin-right: 2em;
   position: relative;
   float: left;
-  top: 50px;
+  top: 4em;
 }
 #darkSeatPhoto{
   width: 130px;
@@ -439,15 +440,15 @@ margin-top: 40px;
 }
 
 #map{
-  width: 100%;
+  width: 90%;
   height: 350px;
   background-color: grey;
-  margin-left: 225px;
+  margin-left: 75px;
   }
   .stationary_addres{
-    width: 45%;
-    float: right;
-    margin-right: 10em;
+    // width: 45%;
+    // float: right;
+    // margin-right: 10em;
     h3{
       text-align: justify;
       width: 63%;

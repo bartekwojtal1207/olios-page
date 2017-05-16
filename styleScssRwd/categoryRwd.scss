@@ -1,3 +1,62 @@
-@media (max-width: 991px) {
 
-}
+@media (max-width: 1300px) {
+  .product .category_title{
+    font-size: .7em;
+  }
+  body{background-color: red;}
+};
+
+@media (max-width: 1150px) {
+  #modernBedPhoto{
+    margin-right: 0em;
+  }
+};
+@media (max-width: 1080px) {
+  #whiteTablePhoto{
+    width: 20em;
+  }
+};
+@media (max-width: 1050px) {
+  #modernBedPhoto{
+    width: 12em;
+    width: 12em;
+  }
+  @media (max-width: 991px) {
+
+    .horizontally{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .category-section h3 {
+    font-size: 3em;
+    margin: auto;
+    text-align: center;
+    }
+    .product .category_title{
+      text-align: center;
+      margin-top: 1em;
+    }
+    .horizontally .category_description{
+      text-align: center;
+    }
+    .horizontally .category_prize{
+      margin-top: 0em;
+      text-align: center;
+    }
+    #whiteTablePhoto{
+      margin-top: 3em;
+      margin: auto;
+      display: block;
+      position: inherit;
+      width: 16em;
+      height: 16em;
+    }
+    #modernBedPhoto{
+      margin: auto;
+      position: inherit;
+    }
+  };
+
+
+};

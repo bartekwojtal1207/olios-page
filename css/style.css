@@ -134,7 +134,7 @@ body {
   .horizontally .category_title {
     display: block;
     text-align: left;
-    margin-top: 55px; }
+    margin-top: 5em; }
   .horizontally .category_description {
     text-align: left; }
   .horizontally .category_prize {
@@ -159,10 +159,11 @@ body {
   margin: auto; }
 
 #modernBedPhoto {
-  width: 200px;
+  width: 14em;
+  margin-right: 2em;
   position: relative;
   float: left;
-  top: 50px; }
+  top: 4em; }
 
 #darkSeatPhoto {
   width: 130px;
@@ -392,22 +393,20 @@ body {
   border: 0px; }
 
 #map {
-  width: 100%;
+  width: 90%;
   height: 350px;
   background-color: grey;
-  margin-left: 225px; }
+  margin-left: 75px; }
 
-.stationary_addres {
-  width: 45%;
-  float: right;
-  margin-right: 10em; }
-  .stationary_addres h3 {
-    text-align: justify;
-    width: 63%;
-    font-size: 3em; }
-    .stationary_addres h3 span {
-      color: blue; }
-  .stationary_addres p {
-    font-size: 2em; }
-  .stationary_addres p:first-of-type {
-    margin-top: 2em; }
+.stationary_addres h3 {
+  text-align: justify;
+  width: 63%;
+  font-size: 3em; }
+  .stationary_addres h3 span {
+    color: blue; }
+
+.stationary_addres p {
+  font-size: 2em; }
+
+.stationary_addres p:first-of-type {
+  margin-top: 2em; }

@@ -1,4 +1,57 @@
 
-@media (max-width: 600px),(orientation: landscape) {
+@media (max-width: 1150px) {
+  p.background_title{
+    font-size: 6em;
+  }
+};
+@media (max-width: 1060px) {
+  p.background_title{
+    left: 350px;
+  }
+  p.thrid-title{
+    margin-left: 0px;
+  }
+};
+@media (max-width: 991px) {
+  p.background_title{
+    left: 350px;
+    top: 70px;
+    font-size: 5em;
+  }
+  p.thrid-title{
+    text-align: center;
+  }
+  h1.main-title{
+    margin-left: 1em;
+  }
+};
+@media (max-width: 840px) {
+  h1.main-title{
+    margin-left: .5em;
+  }
 
-}
+  p.background_title{
+    left: 300px;
+  }
+};
+@media (max-width: 840px) {
+  h1.main-title{
+    font-size: 5em;
+  }
+  p.background_title{
+    display: none;
+  }
+  p.thrid-title{
+  font-size: 1em;
+  }
+};
+
+@media (max-width: 400px) {
+  h1.main-title{
+    font-size: 2em;
+  }
+  p.thrid-title{
+    font-size: .7em;
+  }
+
+};
